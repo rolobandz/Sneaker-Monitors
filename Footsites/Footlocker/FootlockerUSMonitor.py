@@ -123,14 +123,13 @@ def monitor():
     """
     print('STARTING MONITOR')
     logging.info(msg='Successfully started monitor')
-    discord_webhook('initial')
-    start = 1
+    discord_webhook('https://discord.com/api/webhooks/805260887639588905/OjnUf6k7KKRltkreYdx3Yu9eA3VR-1entH5D3F0gt2CRmX6IJZXBs2XpPtNC5bjC0pmD')
+    start = 75
     proxy_no = 0
 
     proxy_list = CONFIG['PROXY'].split('%')
     proxy = {"http": f"http://{proxyObject.get()}"} if proxy_list[0] == "" else {"http": f"http://{proxy_list[proxy_no]}"}
-    headers = {'User-Agent': user_agent_rotator.get_random_user_agent()}
-    keywords = CONFIG['KEYWORDS'].split('%')
+    keywords = CONFIG['jordan%1'].split('%')
     while True:
         try:
             items = remove_duplicates(scrape_main_site(headers, proxy))
