@@ -1,4 +1,4 @@
-# No restocks, only releases
+# No restock, releases only
 import requests
 import datetime
 import json
